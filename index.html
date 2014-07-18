@@ -1,33 +1,42 @@
 <!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Software by middle-down</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="without-description">
-        <h1>Software</h1>
-        <p></p>
-        <p class="view"><a href="https://github.com/middle-down/Software">View the Project on GitHub <small>middle-down/Software</small></a></p>
-        <ul>
-          <li><a href="https://github.com/middle-down/Software/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/middle-down/Software/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/middle-down/Software">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
+  <title>Software</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Software</h1>
+    </header>
+    <div id="container">
+      <p class="tagline"></p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/middle-down/Software/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/middle-down/Software/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/middle-down/Software" class="code">View Software on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h3>
 <a name="software-for-middle-down-proteomics" class="anchor" href="#software-for-middle-down-proteomics"><span class="octicon octicon-link"></span></a>Software for middle-down Proteomics</h3>
 
 <p>Welcome to the webpage of the middle-down Proteomics software tools.
@@ -40,14 +49,16 @@ The page currently contains Histone Coder and isoScale, two software produced to
 <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
 <h3>
-<a name="histone-coder" class="anchor" href="#histone-coder"><span class="octicon octicon-link"></span></a>Histone Coder</h3>
+<a name="histone-coder---download" class="anchor" href="#histone-coder---download"><span class="octicon octicon-link"></span></a>Histone Coder - <a href="http://bioinformatics.sdu.dk/Simone/Histone%20Coder.jar">Download</a>
+</h3>
 
 <p>Histone Coder counts the number of MS/MS ions in a given spectrum to determine the unambiguous localization of a post-translational modification (PTM). The software lists number and type of site determining ions found between the assigned PTM localization by Mascot (Matrix Science) and the closest other amino acids which can host the modification. The PTMs included in the script are phosphorylation (S,T,Y), acetylation (K), mono- and dimethylation (K,R) and trimethylation (K). From the interface it is possible to select filters for spectrum score, fragment ion types and MS/MS tolerance for the search. As additional feature, Histone Coder converts the Mascot output to the standard Brno nomenclature for PTMs (e.g. K4me3K14ac). </p>
 
 <p>Requirements: The software activates with Java. The input is Mascot output in .xml extension. </p>
 
 <h3>
-<a name="isoscale" class="anchor" href="#isoscale"><span class="octicon octicon-link"></span></a>isoScale</h3>
+<a name="isoscale---download" class="anchor" href="#isoscale---download"><span class="octicon octicon-link"></span></a>isoScale - <a href="http://bioinformatics.sdu.dk/Simone/isoScale">Download</a>
+</h3>
 
 <p>isoScale is a proteomics software to quantify peptides based on the total ion intensity of the MS/MS spectra. The software provides also relative quantification of isobaric peptides co-fragmented in MS/MS spectra which share the same sequence but have distinct localizations of post-translational modifications (PTMs). The principle of the quantification is described in Pesavento et al. (Analytical Chemistry, 2006). We recommend the use of the software for middle-down or top-down analyses, as it is suitable for direct comparison of single sequences with scrambled combinatorial PTMs. The user interface provides a choice for CID/HCD or ETD fragmentation. It is suitable for high and low resolution data, as it allows the choice of MS/MS ion tolerance for searching the fragment ions required to calculate the fragment ion relative ratio of isobaric peptides (FIRR). </p>
 
@@ -66,13 +77,26 @@ Simone Sidoli, Veit Schwämmle, Chrystian Ruminowicz, Thomas A. Hansen, Xudong W
 
 <p>If having troubles in using the software, or any kind of help, please contact
 Simone Sidoli: <a href="mailto:simone.sidoli@gmail.com">simone.sidoli@gmail.com</a></p>
-      </section>
+        </article>
+      </div>
     </div>
     <footer>
-      <p>Project maintained by <a href="https://github.com/middle-down">middle-down</a></p>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+      <div class="owner">
+      <p><a href="https://github.com/middle-down" class="avatar"><img src="https://avatars0.githubusercontent.com/u/8202407?s=60" width="48" height="48"/></a> <a href="https://github.com/middle-down">middle-down</a> maintains <a href="https://github.com/middle-down/Software">Software</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
     </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/middle-down/Software/tarball/master" class="tar">tar</a><a href="https://github.com/middle-down/Software/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
 </html>
