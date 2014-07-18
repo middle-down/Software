@@ -1,36 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Software for middle-down Proteomics : " />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Software for middle-down Proteomics by middle-down</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Software for middle-down Proteomics</title>
   </head>
-
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/middle-down/Software">View on GitHub</a>
+      <header>
+        <h1>Software for middle-down Proteomics</h1>
+        <p></p>
+      </header>
 
-          <h1 id="project_title">Software for middle-down Proteomics</h1>
-          <h2 id="project_tagline"></h2>
+      <div id="banner">
+        <span id="logo"></span>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/middle-down/Software/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/middle-down/Software/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+        <a href="https://github.com/middle-down/Software" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/middle-down/Software/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/middle-down/Software/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
         <p>Welcome to the webpage of the middle-down Proteomics software tools.
 The page currently contains Histone Coder and isoScale, two software produced to validate MS/MS spectra and quantify identified polypeptides by Mascot (Matrix Science, UK) database searching engine.</p>
 
@@ -49,7 +57,7 @@ The page currently contains Histone Coder and isoScale, two software produced to
 <p>Requirements: The software activates with Java. The input is Mascot output in .xml extension. </p>
 
 <h3>
-<a name="isoscale---download" class="anchor" href="#isoscale---download"><span class="octicon octicon-link"></span></a>isoScale - <a href="http://bioinformatics.sdu.dk/Simone/isoScale.jar">Download</a>
+<a name="isoscale---download" class="anchor" href="#isoscale---download"><span class="octicon octicon-link"></span></a>isoScale - <a href="http://bioinformatics.sdu.dk/Simone/isoScale.exe">Download</a>
 </h3>
 
 <p>isoScale is a proteomics software to quantify peptides based on the total ion intensity of the MS/MS spectra. The software provides also relative quantification of isobaric peptides co-fragmented in MS/MS spectra which share the same sequence but have distinct localizations of post-translational modifications (PTMs). The principle of the quantification is described in Pesavento et al. (Analytical Chemistry, 2006). We recommend the use of the software for middle-down or top-down analyses, as it is suitable for direct comparison of single sequences with scrambled combinatorial PTMs. The user interface provides a choice for CID/HCD or ETD fragmentation. It is suitable for high and low resolution data, as it allows the choice of MS/MS ion tolerance for searching the fragment ions required to calculate the fragment ion relative ratio of isobaric peptides (FIRR). </p>
@@ -70,17 +78,12 @@ Simone Sidoli, Veit Schwämmle, Chrystian Ruminowicz, Thomas A. Hansen, Xudong W
 <p>If having troubles in using the software, or any kind of help, please contact
 Simone Sidoli: <a href="mailto:simone.sidoli@gmail.com">simone.sidoli@gmail.com</a></p>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Software for middle-down Proteomics maintained by <a href="https://github.com/middle-down">middle-down</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/middle-down">middle-down</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
-
   </body>
 </html>
