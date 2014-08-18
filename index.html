@@ -40,7 +40,7 @@
       </nav>
       <section>
         <p><strong>Welcome to the webpage of the middle-down Proteomics software tools.</strong>
-The page currently contains <strong>Histone Coder</strong> and <strong>isoScale</strong>, two software produced to validate MS/MS spectra and quantify identified polypeptides by Mascot (Matrix Science, UK) database searching engine. The tools are made in collaboration between the <a href="http://www.sdu.dk">University of Southern Denmark</a> and the <a href="http://www.upenn.edu/">University of Pennsylvania</a></p>
+The page currently contains software to validate MS/MS spectra and quantify identified polypeptides by Mascot (Matrix Science, UK) database searching engine. The tools are made in collaboration between the <a href="http://www.sdu.dk">University of Southern Denmark</a> and the <a href="http://www.upenn.edu/">University of Pennsylvania</a>. The website contains <strong>Histone Coder</strong> and <strong>isoScale</strong> (peer reviewed in Proteomics 2014, see below) and a new beta version of both integrated software called <strong>isoScale slim</strong>.</p>
 
 <p>If you want to access our data repository, please visit the <a href="http://crosstalkdb.bmb.sdu.dk/">Cross-talk database</a></p>
 
@@ -60,13 +60,28 @@ The page currently contains <strong>Histone Coder</strong> and <strong>isoScale<
 
 <p>isoScale is a proteomics software to quantify peptides based on the total ion intensity of the MS/MS spectra. The software provides also relative quantification of isobaric peptides co-fragmented in MS/MS spectra which share the same sequence but have distinct localizations of post-translational modifications (PTMs). The principle of the quantification is described in Pesavento et al. (Analytical Chemistry, 2006). We recommend the use of the software for middle-down or top-down analyses, as it is suitable for direct comparison of single sequences with scrambled combinatorial PTMs. The user interface provides a choice for CID/HCD or ETD fragmentation. It is suitable for high and low resolution data, as it allows the choice of MS/MS ion tolerance for searching the fragment ions required to calculate the fragment ion relative ratio of isobaric peptides (FIRR). </p>
 
-<p>Requirements: The software processes Mascot output files in .csv extension. The software input is the result file, which is the output format of Histone Coder, and a data file, which is the Mascot .csv output </p>
+<p>Requirements: The software processes Mascot output files in .csv extension. The software input is the result file, which is the output format of Histone Coder, and a data file, which is the Mascot .csv output</p>
 
 <h3>
-<a name="reference" class="anchor" href="#reference"><span class="octicon octicon-link"></span></a><strong>Reference</strong>
+<a name="new-isoscale-slim---download" class="anchor" href="#new-isoscale-slim---download"><span class="octicon octicon-link"></span></a>
+<strong>New isoScale slim</strong> - <a href="https://github.com/middle-down/Software/blob/master/isoScale%20slim%20-%20beta%20version.jar?raw=true">Download</a>
 </h3>
 
-<p>If you use Histone Coder or isoScale please cite the paper: <strong>Middle-down hybrid chromatography/tandem mass spectrometry workflow for characterization of combinatorial post-translational modifications in histones</strong> (Proteomics, 2014)</p>
+<p>isoScale slim contains both features of Histone Coder and isoScale to provide a simpler and faster data processing. For a simpler data analysis the final output contains exclusively the peptides that passed the Histone Coder validation.
+Further improvements include:</p>
+
+<ul>
+<li>only one Mascot file is required (the output file in .csv format);</li>
+<li>the amino acid specificity of a PTM is no longer specified in the software script, but it is retrieved based on the Mascot search. For instance, if during Mascot database searching you specified dimethylation on lysines and arginines as variable modification, isoScale slim verifies site determining ions for a given dimethylation based on nearby lysines and arginines. This improvement allows for validation of novel PTMs not considered in the previous version of Histone Coder (see above);</li>
+<li>the mass tolerance for both site determining ions calculation and peptide quantification is selected only once at the data file upload;</li>
+<li>the modification symbol (present in the final output) can now be edited. For known PTMs (e.g. ac, me1, me2, me3) isoScale slim provides a default recommendation, but this can be modified. </li>
+<li>the isoScale result output now is named as the Mascot data file plus "-results", allowing multiple analyses without the tedious file renaming;</li>
+<li>the bug of ambiguous match between peptide sequence and protein accession number is now fixed. In the previous version of Histone Coder the wrong assignment of the protein accession number to the quantified peptide can be experienced.</li>
+</ul><h3>
+<a name="recommendations-and-reference" class="anchor" href="#recommendations-and-reference"><span class="octicon octicon-link"></span></a><strong>Recommendations and reference</strong>
+</h3>
+
+<p>For optimal results we recommend to adopt the middle-down workflow, in particular the liquid chromatography setup and the MS acquisition method, as described in: <strong>Middle-down hybrid chromatography/tandem mass spectrometry workflow for characterization of combinatorial post-translational modifications in histones</strong> (Proteomics, 2014)</p>
 
 <p>Authors:
 Simone Sidoli, Veit Schwämmle, Chrystian Ruminowicz, Thomas A. Hansen, Xudong Wu, Kristian Helin and Ole N. Jensen</p>
@@ -75,7 +90,7 @@ Simone Sidoli, Veit Schwämmle, Chrystian Ruminowicz, Thomas A. Hansen, Xudong W
 <a name="contacts" class="anchor" href="#contacts"><span class="octicon octicon-link"></span></a><strong>Contacts</strong>
 </h3>
 
-<p>If having troubles in using the software, or any kind of help, please contact
+<p>If having troubles in using the software, or to report bugs, please contact
 Simone Sidoli: <a href="mailto:simone.sidoli@gmail.com">simone.sidoli@gmail.com</a></p>
       </section>
       <footer>
