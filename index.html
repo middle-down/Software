@@ -39,14 +39,15 @@
         <ul></ul>
       </nav>
       <section>
-        <p><strong>Welcome to the webpage of the middle-down Proteomics software tools.</strong>
-The page currently contains software to validate MS/MS spectra and quantify identified polypeptides by Mascot (Matrix Science, UK) database searching engine. The tools are made in collaboration between the <a href="http://www.sdu.dk">University of Southern Denmark</a> and the <a href="http://www.upenn.edu/">University of Pennsylvania</a>. The website contains <strong>Histone Coder</strong> and <strong>isoScale</strong> (peer reviewed in Proteomics 2014, see below) and a new beta version of both integrated software called <strong>isoScale slim</strong>.</p>
+        <p><strong>Welcome to the webpage of the middle-down proteomics software tools</strong></p>
+
+<p>The website contains software to validate MS/MS spectra and quantify polypeptides identified by Mascot (Matrix Science, UK) database searching engine. The tools are made in collaboration between the <a href="http://www.sdu.dk">University of Southern Denmark</a> and the <a href="http://www.upenn.edu/">University of Pennsylvania</a>. The website contains <strong>1) Histone Coder</strong> and <strong>2) isoScale</strong> (peer reviewed in Proteomics 2014, see below). However, we recommend the use of <strong>3) isoScale slim</strong>, as it is a simpler integrated version of the two previous software. For expert users we included <strong>4) isoScale labels</strong>, a beta software that integrates isoScale slim and the possibility to quantify labeled peptides (e.g. SILAC).</p>
 
 <p>If you want to access our data repository, please visit the <a href="http://crosstalkdb.bmb.sdu.dk/">Cross-talk database</a></p>
 
 <h3>
-<a name="histone-coder---download" class="anchor" href="#histone-coder---download"><span class="octicon octicon-link"></span></a>
-<strong>Histone Coder</strong> - <a href="https://github.com/middle-down/Software/blob/master/Histone%20Coder.jar?raw=true">Download</a>
+<a name="1-histone-coder---download" class="anchor" href="#1-histone-coder---download"><span class="octicon octicon-link"></span></a>
+<strong>1) Histone Coder</strong> - <a href="https://github.com/middle-down/Software/blob/master/Histone%20Coder.jar?raw=true">Download</a>
 </h3>
 
 <p>Histone Coder counts the number of MS/MS ions in a given spectrum to determine the unambiguous localization of a post-translational modification (PTM). The software lists number and type of site determining ions found between the assigned PTM localization by Mascot (Matrix Science) and the closest other amino acids which can host the modification. The PTMs included in the script are phosphorylation (S,T,Y), acetylation (K), mono- and dimethylation (K,R) and trimethylation (K). From the interface it is possible to select filters for spectrum score, fragment ion types and MS/MS tolerance for the search. As additional feature, Histone Coder converts the Mascot output to the standard Brno nomenclature for PTMs (e.g. K4me3K14ac). </p>
@@ -54,8 +55,8 @@ The page currently contains software to validate MS/MS spectra and quantify iden
 <p>Requirements: The software activates with Java. The input is Mascot output in .xml extension. </p>
 
 <h3>
-<a name="isoscale---download" class="anchor" href="#isoscale---download"><span class="octicon octicon-link"></span></a>
-<strong>isoScale</strong> - <a href="https://github.com/middle-down/Software/blob/master/isoScale-v2.jar?raw=true">Download</a>
+<a name="2-isoscale---download" class="anchor" href="#2-isoscale---download"><span class="octicon octicon-link"></span></a>
+<strong>2) isoScale</strong> - <a href="https://github.com/middle-down/Software/blob/master/isoScale-v2.jar?raw=true">Download</a>
 </h3>
 
 <p>isoScale is a proteomics software to quantify peptides based on the total ion intensity of the MS/MS spectra. The software provides also relative quantification of isobaric peptides co-fragmented in MS/MS spectra which share the same sequence but have distinct localizations of post-translational modifications (PTMs). The principle of the quantification is described in Pesavento et al. (Analytical Chemistry, 2006). We recommend the use of the software for middle-down or top-down analyses, as it is suitable for direct comparison of single sequences with scrambled combinatorial PTMs. The user interface provides a choice for CID/HCD or ETD fragmentation. It is suitable for high and low resolution data, as it allows the choice of MS/MS ion tolerance for searching the fragment ions required to calculate the fragment ion relative ratio of isobaric peptides (FIRR). </p>
@@ -63,8 +64,8 @@ The page currently contains software to validate MS/MS spectra and quantify iden
 <p>Requirements: The software processes Mascot output files in .csv extension. The software input is the result file, which is the output format of Histone Coder, and a data file, which is the Mascot .csv output</p>
 
 <h3>
-<a name="new-isoscale-slim---download" class="anchor" href="#new-isoscale-slim---download"><span class="octicon octicon-link"></span></a>
-<strong>New isoScale slim</strong> - <a href="https://github.com/middle-down/Software/blob/master/isoScale%20slim%20-%20beta%20version.jar?raw=true">Download</a>
+<a name="3-isoscale-slim---download" class="anchor" href="#3-isoscale-slim---download"><span class="octicon octicon-link"></span></a>
+<strong>3) isoScale slim</strong> - <a href="https://github.com/middle-down/Software/blob/master/isoScale%20slim.jar?raw=true">Download</a>
 </h3>
 
 <p>isoScale slim contains both features of Histone Coder and isoScale to provide a simpler and faster data processing. For a simpler data analysis the final output contains exclusively the peptides that passed the Histone Coder validation.
@@ -77,7 +78,17 @@ Further improvements include:</p>
 <li>the modification symbol (present in the final output) can now be edited. For known PTMs (e.g. ac, me1, me2, me3) isoScale slim provides a default recommendation, but this can be modified. </li>
 <li>the isoScale result output now is named as the Mascot data file plus "-results", allowing multiple analyses without the tedious file renaming;</li>
 <li>the bug of ambiguous match between peptide sequence and protein accession number is now fixed. In the previous version of Histone Coder the wrong assignment of the protein accession number to the quantified peptide can be experienced.</li>
-</ul><h3>
+</ul>
+
+<h3>
+<a name="4-isoscale-labels---beta---download" class="anchor" href="#4-isoscale-labels---beta---download"><span class="octicon octicon-link"></span></a>
+<strong>4) isoScale labels - beta</strong> - <a href="https://github.com/middle-down/Software/blob/master/isoScale%20labels%20-%20beta%20version.jar?raw=true">Download</a>
+</h3>
+
+<p>isoScale labels (beta version) is an implementation of isoScale slim. The new feature is the discrimination of PTMs and labels. During validation it is possible to specify whether the modification considered by Mascot require site determining ions validation or not (e.g. a SILAC labeled amino acid does not require MS/MS mapping).
+This tool is still under development. Preliminary data show that it can cope with SILAC labeled histone peptides. However, Mascot v2.5 is required for such analysis, as previous versions cannot handle multiple modifications on the same amino acid (e.g. heavy lysine and acetylated lysine).</p>
+
+<h3>
 <a name="recommendations-and-reference" class="anchor" href="#recommendations-and-reference"><span class="octicon octicon-link"></span></a><strong>Recommendations and reference</strong>
 </h3>
 
